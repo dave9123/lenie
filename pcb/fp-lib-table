@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ESP32-DEVKIT-V1")(type "KiCad")(uri "C:/Users/davet/Documents/lenie/pcb")(options "")(descr ""))
+)

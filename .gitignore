@@ -1,0 +1,4 @@
+.git
+.obsidian
+*.lck
+pcb/*-backups

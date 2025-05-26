@@ -26,6 +26,9 @@ I decided to add LED matrix as the TFT display emits blue light which isn't nece
 | :------------------------------------------------------------: | :-----------------------------------------------------: | :------------------------------------------------------------: | :------------------------------------------------------------: |
 | ![Schematics](https://dave9123.me/assets/kicad_IpeoWiujsL.jpg) | ![PCB](https://dave9123.me/assets/kicad_ov2GFOG3tD.jpg) | ![3D View #1](https://dave9123.me/assets/kicad_K7pklo50ou.jpg) | ![3D View #2](https://dave9123.me/assets/kicad_1gZMiEnWAk.jpg) |
 
+![Current Bill of Material](https://dave9123.me/assets/firefox_xtIIQq1NK6.jpg)
+I currently have the incomplete Bill of Material, haven't thought of integrating the 5 tactile switches as of now yet.
+
 Useful resources:
 - https://www.theguardian.com/lifeandstyle/2023/oct/01/should-i-worry-about-blue-light
 - https://www.reddit.com/r/NoStupidQuestions/comments/1h9wh2m/is_it_bad_to_sleep_with_red_leds/

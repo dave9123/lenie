@@ -2,7 +2,7 @@
 A smart alarm clock that helps you reduce distractions and reminds you about upcoming tasks.
 
 ## Origin
-_Lenie means “of Magdala”_ (from Magdalena) and “torch”, “beautiful”, “light”, “bright” and “shining” (from Helene)
+_Lenie means “of Magdala”_ (from Magdalena) and “torch”, “beautiful”, “light”, “bright” and “shining” (from Helene).
 
 ## Goals
 - Support music playback
@@ -26,3 +26,4 @@ _Lenie means “of Magdala”_ (from Magdalena) and “torch”, “beautiful”
 - <a href="https://www.flaticon.com/free-icons/sunny" title="sunny icons">Sunny icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by apien - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Freepik - Flaticon</a>
+- https://www.reddit.com/r/NoStupidQuestions/comments/1h9wh2m/is_it_bad_to_sleep_with_red_leds/

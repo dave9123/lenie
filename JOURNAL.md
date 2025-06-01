@@ -84,5 +84,65 @@ Notes:
 
 Time spent: 4 hours
 
+## May 29, 2025
+
+I added RTC DS3231SN to the schematic and added some base code.
+
+|                      Schematic                       |                        Code                         |
+| :--------------------------------------------------: | :-------------------------------------------------: |
+| ![](https://dave9123.me/assets/kicad_8JHVDLMDnH.jpg) | ![](https://dave9123.me/assets/Code_TNoSHE5zmJ.jpg) |
+
+## May 30, 2025
+
+I've set the driver up and now I've just realized that my current ILI9341 symbol doesn't have touchscreen pins which means I gotta either make them manually or just use connection pins and either make a PCB and get it manufactured or make it myself using some copper boards.
+
+Here are some equations to calculate the battery level while protecting the ESP32 (as the ESP32 can handle voltages up to 3.3V):
+
+$$
+V_{OUT} = V_{IN} \times \frac{R2}{R1 + R2}
+$$
+
+$$
+V_{BAT(MAX)} = V_{ADC(MAX)} \times \left(\frac{R1 + R2}{R2}\right)
+$$
+
+When I'd like to support a 7.4V battery, I just realized that the TP4056 doesn't support the 3.7V battery so maybe I should just increase the resistance to save power and not waste on precious electricity 😜.
+
+Some high quality idea at 10 pm just before bed, I could just reduce the energy wasted from the step up but that means I need to place another capacitor which means more energy wasted but Idk if it's worth it so I'm keeping it as it is for the time being :)
+
+![](https://dave9123.me/assets/slack_7olpqeBzNi.jpg)
+> Split step up to only feed LED matrix and speaker 5V
+
+## May 31, 2025
+
+![](https://dave9123.me/assets/kicad_aT1iWo453M.jpg)
+Improved on the battery level detection to reduce noise while balancing between wasted energy and accuracy.
+
+| Parameter | Example          | Description                                                             |
+| --------- | ---------------- | ----------------------------------------------------------------------- |
+| T         | WPA              | Authentication type; can be WEP or WPA, or leave empty for no password. |
+| S         | MyNetworkName    | Network SSID. Required.                                                 |
+| P         | ThisIsMyPassword | Password, ignored if T is left blank.                                   |
+| H         | true             | Optional. True if the network SSID is hidden.                           |
+> About WiFI QR code
+
+An example on Lenie:
+> WIFI:T:WPA;S:Lenie;P:why I be leaking this;H:;;
+
+## June 1, 2025
+
+printf variable specifier
+
+| Specifier | Meaning                     | Example Input | Output      |
+| --------- | --------------------------- | ------------- | ----------- |
+| `%d`      | Integer (decimal)           | `42`          | `42`        |
+| `%ld`     | Long integer                | `123456789L`  | `123456789` |
+| `%u`      | Unsigned integer            | `42u`         | `42`        |
+| `%f`      | Float/double                | `3.14`        | `3.140000`  |
+| `%.2f`    | Float with 2 decimal places | `3.14159`     | `3.14`      |
+| `%c`      | Character                   | `'A'`         | `A`         |
+| `%s`      | String (char array)         | `"Hello"`     | `Hello`     |
+| `%%`      | Prints a percent sign       | –             | `%`         |
+Maybe I might be able to use `esp_light_sleep_start()` or `esp_deep_sleep_start()` to save power but I still need to light the LED matrix up or can I just shut it off and control it?
 ## Reference
 ![ESP32 DOIT DEVKIT V1 30 GPIOs Board Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png?quality=100&strip=all&ssl=1)

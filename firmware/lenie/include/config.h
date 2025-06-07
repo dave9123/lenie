@@ -1,13 +1,9 @@
 #ifndef LENIE_CONFIG_H
 #define LENIE_CONFIG_H
 
-#define WIFI_SETUP_SSID "Lenie"
+#define WIFI_SETUP_SSID "Lenie" // Runs as AP for onboarding, 32 characters max
 // #define WIFI_PASSWORD_OVERRIDE "" // Uncomment this to override automatic password generation
-#define WIFI_HOSTNAME "lenie"
-
-// Uncomment to skip WiFi setup, it will still let you know if it fails to connect if you'd like to connect to a different network one
-// #define SET_WIFI_SSID
-// #define SET_WIFI_PASSWORD
+#define WIFI_HOSTNAME "lenie" // 253 ASCII characters max, may contain only the ASCII letters a-z (in a case-insensitive manner), the digits 0-9, and the hyphen-minus character ('-')
 
 #define TIMEZONE_OVERRIDE "Asia/Jakarta"
 

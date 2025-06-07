@@ -91,7 +91,7 @@ I added RTC DS3231SN to the schematic and added some base code.
 |                      Schematic                       |                        Code                         |
 | :--------------------------------------------------: | :-------------------------------------------------: |
 | ![](https://dave9123.me/assets/kicad_8JHVDLMDnH.jpg) | ![](https://dave9123.me/assets/Code_TNoSHE5zmJ.jpg) |
-
+Time spent: 2 hours
 ## May 30, 2025
 
 I've set the driver up and now I've just realized that my current ILI9341 symbol doesn't have touchscreen pins which means I gotta either make them manually or just use connection pins and either make a PCB and get it manufactured or make it myself using some copper boards.
@@ -113,6 +113,7 @@ Some high quality idea at 10 pm just before bed, I could just reduce the energy 
 ![](https://dave9123.me/assets/slack_7olpqeBzNi.jpg)
 > Split step up to only feed LED matrix and speaker 5V
 
+Time spent: 3 hours
 ## May 31, 2025
 
 ![](https://dave9123.me/assets/kicad_aT1iWo453M.jpg)
@@ -129,6 +130,7 @@ Improved on the battery level detection to reduce noise while balancing between 
 An example on Lenie:
 > WIFI:T:WPA;S:Lenie;P:why I be leaking this;H:;;
 
+Time spent: 3 hours
 ## June 1, 2025
 
 printf variable specifier
@@ -144,5 +146,18 @@ printf variable specifier
 | `%s`      | String (char array)         | `"Hello"`     | `Hello`     |
 | `%%`      | Prints a percent sign       | –             | `%`         |
 Maybe I might be able to use `esp_light_sleep_start()` or `esp_deep_sleep_start()` to save power but I still need to light the LED matrix up or can I just shut it off and control it?
+
+So I have 4 MB of flash memory and 520 KB of SRAM.
+> Static random-access memory (SRAM) is **a type of volatile memory commonly found in central processing units (CPUs), caches, and high-speed registers**. Unlike dynamic random-access memory (DRAM), SRAM doesn't require constant refreshing to retain data, as it uses flip-flops to store each bit.
+> Source: [Understanding SRAM: Key Concepts Explained | Lenovo IN](https://www.lenovo.com/in/en/glossary/what-is-sram/)
+
+![](https://dave9123.me/assets/Code_6KASRqx85a.jpg)
+> Base battery level calculation
+
+Time spent: 1 hour
+## June 6, 2025
+
+
+
 ## Reference
 ![ESP32 DOIT DEVKIT V1 30 GPIOs Board Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png?quality=100&strip=all&ssl=1)
